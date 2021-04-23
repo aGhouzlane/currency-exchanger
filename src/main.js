@@ -13,16 +13,16 @@ function getElements(response) {
   }
 }
 
-async function makeApiCall() {
-  const response = await CurrencyExchangeService.getCurrency();
+async function makeApiCall(base_code) {
+  const response = await CurrencyExchangeService.getCurrency(base_code);
   getElements(response);
 }
 
 $(document).ready(function () {
   $('#result').click(function () {
 
-    //let base_code = $('#userInput').val();
+    let base_code = $('#userInput').val();
     // clearFields();
-    makeApiCall();
+    makeApiCall(base_code);
   });
 });
