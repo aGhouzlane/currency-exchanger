@@ -11,15 +11,21 @@
 <body>
   <label for="userInputAmount">Amount: </label>
   <input type="text" id="userInputAmount">
-  <label for="userInputBaseCurrency">Currency: </label>
+  <label for="userInputBaseCurrency">Base Currency: </label>
   <input type="text" id="userInputBaseCurrency">
-  <label for="userInputOtherCurrency">In: </label>
+  <label for="userInputOtherCurrency">Target Currency: </label>
   <input type="text" id="userInputOtherCurrency">
   <input class="btn btn-success" id="result" value="Get result">
 
   <div id="output">
   </div>
+
   <div id="showErrors">
+    <div id="base"></div>
+    <div id="target"></div>
+    <div id="nonegative"></div>
+    <div id="space"></div>
+    <div id="nan"></div>
   </div>
 
 </body>
