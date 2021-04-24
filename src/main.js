@@ -20,7 +20,6 @@ function getElements(response, amount) {
   } else if (!Number(amount)) {
     $('#nan').text(`Error: Amount input supports only positive numbers.`);
   }
-
 }
 
 async function makeApiCall(base_code, amount, other_code) {
@@ -43,5 +42,13 @@ $(document).ready(function () {
     // }
 
     makeApiCall(base_code, amount, other_code);
+
+    $('#output').text("");
+    $('#base').text("");
+    $('#nonegative').text("");
+    $('#space').text("");
+    $('#nan').text("");
+
+
   });
 });
