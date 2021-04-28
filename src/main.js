@@ -37,10 +37,6 @@ $(document).ready(function () {
     $('#userInputAmount').val("");
     $("#userInputOtherCurrency").val("");
 
-    // if (base_code == "" || amount == "" || other_code == "") {
-    //   $('#output').text(`Error: All inputs are required before submition.`);
-    // }
-
     makeApiCall(base_code, amount, other_code);
 
     $('#output').text("");
@@ -48,7 +44,5 @@ $(document).ready(function () {
     $('#nonegative').text("");
     $('#space').text("");
     $('#nan').text("");
-
-
   });
 });
