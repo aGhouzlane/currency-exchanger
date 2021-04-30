@@ -9,25 +9,45 @@
 </head>
 
 <body>
-  <label for="userInputAmount">Amount: </label>
-  <input type="text" id="userInputAmount">
-  <label for="userInputBaseCurrency">Base Currency: </label>
-  <input type="text" id="userInputBaseCurrency">
-  <label for="userInputOtherCurrency">Target Currency: </label>
-  <input type="text" id="userInputOtherCurrency">
-  <input class="btn btn-success" id="result" value="Get result">
-
-  <div id="output">
+  <div class="fixed-header">
+    <div id="pad-img" class="float-child">
+      <img style="padding-right: 10px;" width="40px" src="assets/images/exchange.png" alt="exchange">
+    </div>
+    <div id="pad-title" class="float-child">
+      <h6><strong>Currency Exchanger</strong></h6>
+    </div>
   </div>
-
-  <div id="showErrors">
+  <div class="container">
+    <div style="width: 100%; height: 300px; background-color: rgb(188, 218, 188);">
+    </div>
+    <form>
+      <div class="form-group">
+        <label for="userInputAmount"><b>Amount:</b></label>
+        <input class="form-control" type="text" id="userInputAmount" placeholder="Example: 10">
+      </div>
+      <div class="form-group">
+        <label for="userInputBaseCurrency"><b>Base Currency:</b></label>
+        <input class="form-control" type="text" id="userInputBaseCurrency" placeholder="Example: USD">
+      </div>
+      <div class="form-group">
+        <label for="userInputOtherCurrency"><b>Target Currency:</b></label>
+        <input class="form-control" type="text" id="userInputOtherCurrency" placeholder="Example: EUR">
+      </div>
+      <div style="text-align: center;">
+        <input class="btn btn-success" id="result" value="Convert">
+      </div>
+    </form>
+    <div id="output"></div>
     <div id="base"></div>
     <div id="target"></div>
     <div id="nonegative"></div>
     <div id="space"></div>
     <div id="nan"></div>
   </div>
-
+  <div
+    style="margin-top:310px; padding: 15px; background-color: rgb(11, 34, 57); color: rgb(28, 114, 201); text-align: center;">
+    &copy; 2021. Website created by Ahmed Ghouzlane. All Rights Reserved.
+  </div>
 </body>
 
 </html>

@@ -1,0 +1,32 @@
+#output, #base, #target, #nonegative, #space, #nan{
+  display: none;
+  text-align: center;
+  padding: 15px;
+  margin-top: 10px;
+  border-style: dashed;
+  border-radius: 20px;
+}
+.fixed-header {
+  width: 100%;
+  position: fixed;
+  background: rgb(28, 114, 201);
+  padding: 10px 0;
+  color: rgb(217, 255, 228);
+}
+
+.fixed-header {
+  top: 0;
+}
+
+.float-child {
+  float: left;
+} 
+
+#pad-img{
+  padding-left:20px;
+  padding-top:10px;
+}
+
+#pad-title{
+  padding-top:20px;
+}
