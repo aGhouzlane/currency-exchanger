@@ -17,9 +17,11 @@
 
 1. Clone git repository [Click here](https://github.com/aGhouzlane/my-resort-website.git)
 2. Find index.html file
-3. `$ open index.html`
-4. `$ npm install` at the root of the project directory
-5. `$ npm run build` at the root of the project directory
+3. Create .env file at the root of the project directory
+4. Obtain a key from (https://www.exchangerate-api.com) and store it in API_KEY variable 
+5. `$ open index.html`
+6. `$ npm install` at the root of the project directory
+7. `$ npm run build` at the root of the project directory
 
 
 ## License
